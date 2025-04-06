@@ -17,10 +17,10 @@ public class ProjectController {
 
     private final EmployeeService employeeService;
 
-//    @GetMapping("/employees")
-//    public List<Employee> getAllEmployees() throws ParseException {
-//        return employeeService.listOfEmployees();
-//    }
+    @GetMapping("/employees")
+    public List<Employee> getAllEmployees() throws ParseException {
+        return employeeService.listOfEmployees();
+    }
 
     @GetMapping("/authors")
     public String getAllAuthors() {
