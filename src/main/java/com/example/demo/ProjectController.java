@@ -17,19 +17,14 @@ public class ProjectController {
 
     private final EmployeeService employeeService;
 
+    @GetMapping("/ec2-instance")
+    public String getAllAuthors() {
+        return "Hello from AWS EC2 Instance!";
+    }
+
     @GetMapping("/employees")
     public List<Employee> getAllEmployees() throws ParseException {
         return employeeService.listOfEmployees();
-    }
-
-    @GetMapping("/authors")
-    public String getAllAuthors() {
-        return "Get all authors!";
-    }
-
-    @GetMapping("/books")
-    public String getAllBooks() {
-        return "Get all books!";
     }
 
 }
