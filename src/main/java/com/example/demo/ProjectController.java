@@ -4,7 +4,6 @@ import java.text.ParseException;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.model.Employee;
@@ -14,7 +13,7 @@ import lombok.AllArgsConstructor;
 
 @RestController
 @AllArgsConstructor
-public class DemoController {
+public class ProjectController {
 
     private final EmployeeService employeeService;
 
