@@ -1,9 +1,5 @@
 # Spring application configuration
 
-# Server configuration
-server:
-  port: 8081
-
 # Database configuration
 spring:
   datasource:
